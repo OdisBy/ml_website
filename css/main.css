@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background-color: #FFDE59;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #1B3C65 !important
+}
+
+section {
+    padding: 100px;
+}
+
+.who {
+    background-color: #FFFFFF;
+}
+
+.who p {
+    color: #000000;
+    font-size: 1.4em;
+    font-weight: 400;
+    margin-left: 40px;
+}
+
+.who h3 {
+    margin: 40px;
+    font-weight: bold;
+    font-size: 2.5em;
+}
+
+.who h2 {
+    margin-left: 40px;
+    font-weight: bold;
+}
+
+.about {
+    background-color: #FFDE59;
+}
+
+.about h2 {
+    margin-left: 40px;
+    font-weight: bold;
+}
+
+.about p {
+    color: #000000;
+    font-size: 1.6em;
+    font-weight: 400;
+    margin-left: 40px;
+}
+
+.comunicacao {
+    background-color: #FFDE59;
+}
+
+.comunicacao h2 {
+    margin-left: 40px;
+    font-weight: bold;
+}
+
+.comunicacao p {
+    color: #000000;
+    font-size: 1.6em;
+    font-weight: 400;
+    margin-left: 40px;
+}
+
+.center-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+        
+}
+
+.banner {
+    position: relative;
+    min-height: 100vh;
+    background: url(https://t2.tudocdn.net/602353?w=1920);
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header.sticky {
+    background: #fff;
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+header .title {
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+header.sticky .title {
+    color: #111;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+header.sticky ul li a {
+    color: #111;
+}
+.image-box {
+    width: 300px;
+    height: 200px;
+    background-color: turquoise;
+
+}
+
+
+.heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111;
+}
+
+.heading h2 {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contentBx {
+    padding-right: 30px;
+}
+
+.contentBx h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.msg {
+    max-width: 1000px;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+.contact {
+    background: white;
+}
+
+.contactInfo {
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    min-width: 40%;
+}
+
+.contactInfo h3 {
+    text-align: start;
+}
+
+.contactInfoBx .box {
+    padding: 20px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.contactInfoBx .box .icon {
+    min-width: 40px;
+    padding-top: 4px;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 24px;
+}
+
+.contactInfoBx .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #000;
+    flex-direction: column;
+    font-weight: 300;
+}
+.copyright {
+    background: #16141C;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/*Responsive*/
+@media (max-width: 991px) {
+
+    header,
+    header.sticky {
+        padding: 20px 50px;
+        z-index: 1000;
+    }
+
+    .menu {
+        position: fixed;
+        top: 75px;
+        left: -100%;
+        display: block;
+        padding: 100px 50px;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        transition: 0.5s;
+        z-index: 999;
+        border-top: 1px solid rgba(0, 0, 0, 0.2)
+    }
+
+    .menu.active {
+        left: 0;
+    }
+
+    header ul li a {
+        color: #111;
+        font-size: 24px;
+        margin: 10px;
+    }
+
+    .toggle {
+        width: 40px;
+        height: 40px;
+        background: url(https://www.flaticon.com/svg/static/icons/svg/660/660015.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+
+    .toggle.active {
+        width: 40px;
+        height: 40px;
+        background: url(https://www.flaticon.com/svg/static/icons/svg/660/660376.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+
+    header.sticky .toggle {
+        filter: invert(1);
+    }
+
+    section {
+        padding: 100px 50px;
+    }
+    .heading h2 {
+        font-size: 24px;
+    }
+
+    .contentBx h3 {
+        font-size: 20px;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .left {
+        display: block;
+        margin-left: 0px;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    .w50 {
+        margin-bottom: 20px;
+    }
+
+    .contactInfo {
+        margin: 20px 0;
+    }
+
+    
+}
+
+@media (max-width: 600px) {
+
+    header,
+    header.sticky {
+        padding: 20px 20px;
+    }
+
+    .banner {
+        padding: 150px 20px 100px;
+    }
+
+    .section {
+        padding: 100px 20px;
+    }
+}
